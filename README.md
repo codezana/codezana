@@ -1,16 +1,30 @@
-## Hi there 👋
+# 👋 Hi, I'm Zana Hidayat Mohammed  
 
-<!--
-**codezana/codezana** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎯 **Full-Stack Web Developer | Laravel & NestJS Expert | Database Designer**
 
-Here are some ideas to get you started:
+💻 I'm from **Kurdistan - Sulaymaniyah**, passionate about building scalable systems.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🧠 I’m currently learning **React & Next.js**  
+⚙️ Experienced with **Laravel**, **NestJS**, **MySQL**, **PostgreSQL**, and **Tailwind CSS** and ** More **
+
+🌍 My goal is to build smart systems that simplify real-life problems.  
+📦 Founder of **Suli Core**, focused on database systems and web applications.
+
+---
+
+### 📫 Connect with me  
+🌐 [Upwork Profile]([https://www.upwork.com](https://www.upwork.com/freelancers/~01b5fd3be5b3012792?mp_source=share))  
+💬 [WhatsApp](https://wa.me/9647803853805)  
+📧 Email: zanah.hajimuhamad@gmail.com 
+
+---
+
+### 🛠️ My Tech Stack  
+- **Backend:** Laravel, NestJS, TypeORM  
+- **Frontend:** React, Next.js, Tailwind CSS  
+- **Database:** MySQL, PostgreSQL  
+- **Tools:** Git, VS Code, Render, Trae
+
+---
+
+⭐ *“Code with logic, design with purpose.”*  
