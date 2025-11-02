@@ -14,7 +14,6 @@
 
 ### 📫 Connect with me  
 🌐 [Upwork Profile](https://www.upwork.com/freelancers/~01b5fd3be5b3012792?mp_source=share)
-
 💬 [WhatsApp](https://wa.me/9647803853805)  
 📧 Email: zanah.hajimuhamad@gmail.com 
 
