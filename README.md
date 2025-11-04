@@ -12,11 +12,12 @@
 
 ---
 
-### 📫 Connect with me  
-🌐 [Upwork Profile](https://www.upwork.com/freelancers/~01b5fd3be5b3012792?mp_source=share)
-💚 [WhatsApp](https://wa.me/9647803853805) 
-📗 [SuliCore- سولی کۆڕ](https://www.facebook.com/sulicore2025)  
-📧 Email: zanah.hajimuhamad@gmail.com 
+### 📫 Connect with Me  
+
+🌐 [Upwork Profile](https://www.upwork.com/freelancers/~01b5fd3be5b3012792?mp_source=share)  
+• 💚 [WhatsApp](https://wa.me/9647803853805)  
+• 🟩 [SuliCore – سولی کۆر](https://www.facebook.com/sulicore2025)  
+📧 **Email:** [zanah.hajimuhamad@gmail.com](mailto:zanah.hajimuhamad@gmail.com)
 
 ---
 
