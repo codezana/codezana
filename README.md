@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Zana Hidayat Mohammed  
 
-🎯 **Full-Stack Web Developer | Laravel & NestJS Expert | Database Designer**
+🎯 **Full-Stack Web Developer ⏳ | Laravel & NestJS Expert | Database Designer**
 
 💻 I'm from **Kurdistan - Sulaymaniyah**, passionate about building scalable systems.
 
