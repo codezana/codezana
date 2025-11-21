@@ -7,9 +7,7 @@
 🧠 I’m currently learning **React & Next.js**  
 ⚙️ Experienced with **Laravel**, **NestJS**, **MySQL**, **PostgreSQL**, and **Tailwind CSS** and ** More **
 
-🌍 My goal is to build smart systems that simplify real-life problems.  
-📦 Founder of **Suli Core**, focused on database systems and web applications.
-
+🌍 My goal is to build smart systems that simplify real-life problems.
 ---
 
 ### 📫 Connect with Me  
