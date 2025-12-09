@@ -26,18 +26,25 @@ This creates:
 
 ```
 prisma/schema.prisma
-prisma/prisma.config.ts
 .env
 ```
 
 ---
 
+Also need :
+
+```
+npm install pg dotenv
+
+```
+
+---
 ## 📌 3. Configure PostgreSQL Connection
 
 Edit `.env`:
 
 ```
-DATABASE_URL="postgresql://postgres:root@localhost:5432/mydb?schema=public"
+DATABASE_URL="postgresql://postgres:SuliCore2025DB@localhost:5432/hello-prisma?schema=public"
 ```
 
 Replace:
@@ -73,28 +80,7 @@ You can add more models later.
 
 ---
 
-## 📌 5. Configure prisma.config.ts (Correct Minimal Version)
-
-Edit `prisma/prisma.config.ts`:
-
-```ts
-import "dotenv/config";
-import { defineConfig, env } from "@prisma/config";
-
-export default defineConfig({
-  schema: "./prisma/schema.prisma",
-  datasource: {
-    url: env("DATABASE_URL"),
-  },
-});
-```
-
-No extra keys needed.  
-Prisma 7 reads the generator/output from `schema.prisma`.
-
----
-
-## 📌 6. Install Prisma PostgreSQL Adapter
+## 📌 5. Install Prisma PostgreSQL Adapter
 
 Prisma 7 requires adapters:
 
@@ -104,7 +90,7 @@ npm install @prisma/adapter-pg
 
 ---
 
-## 📌 7. Run Migration
+## 📌 6. Run Migration
 
 ```bash
 npx prisma migrate dev --name init
@@ -114,7 +100,7 @@ This creates your SQL tables in PostgreSQL.
 
 ---
 
-## 📌 8. Generate Prisma Client
+## 📌 7. Generate Prisma Client
 
 ```bash
 npx prisma generate
@@ -128,39 +114,87 @@ src/generated/prisma/
 
 ---
 
-## 📌 9. Create PrismaService (Important)
+## 📌 8. Create PrismaService (Important)
 
 Create file: `src/prisma/prisma.service.ts`
 
 ```ts
-import { Injectable } from '@nestjs/common';
-import { PrismaClient } from '../generated/prisma/client';
+import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config'; // Import ConfigService
 import { PrismaPg } from '@prisma/adapter-pg';
+import { PrismaClient } from 'generated/prisma/client';
 
 @Injectable()
-export class PrismaService extends PrismaClient {
-  constructor() {
-    const adapter = new PrismaPg({ url: process.env.DATABASE_URL });
+export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
+  private readonly databaseUrl: string;
+
+  // Inject ConfigService here
+  constructor(private readonly configService: ConfigService) {
+    const url = configService.get<string>('DATABASE_URL');
+
+    if (!url) {
+        throw new Error('DATABASE_URL environment variable is not set.');
+    }
+
+    // Use the ConfigService value for the adapter
+    const adapter = new PrismaPg({ connectionString: url });
     super({ adapter });
+    this.databaseUrl = url;
+  }
+
+  async onModuleInit() {
+    await this.$connect();
+    console.log(`Prisma connected to: ${this.databaseUrl.split('@')[1]}`);
+  }
+
+  async onModuleDestroy() {
+    await this.$disconnect();
   }
 }
+
 ```
 
 ---
 
-## 📌 10. Create PrismaModule
+## 📌 9. Create PrismaModule
 
 Create file: `src/prisma/prisma.module.ts`
 
 ```ts
 import { Module } from '@nestjs/common';
 import { PrismaService } from './prisma.service';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
+  imports: [ConfigModule],
   providers: [PrismaService],
   exports: [PrismaService],
 })
 export class PrismaModule {}
+
+```
+
+---
+
+
+## 📌 10. Ensure ConfigModule is imported in app.module.ts
+
+```ts
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config'; // Import ConfigModule
+import { PrismaService } from './prisma.service';
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true, // Makes .env variables available everywhere
+    }),
+  ],
+  providers: [PrismaService],
+  exports: [PrismaService],
+})
+export class AppModule {}
+
 ```
 
 ---
