@@ -254,6 +254,10 @@ export class CreateUserDto {
 npm run start:dev
 ```
 
+## 📌 15. To see tables just like pgadmin
+```bash
+npx prisma studio
+```
 ---
 
 # 🎉 Your NestJS + Prisma 7 Project Is Now Ready
