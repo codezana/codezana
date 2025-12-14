@@ -214,14 +214,10 @@ docker compose up -d
 * Never rely on global tools inside Docker
 
 ---
-
-## ✅ Status
-
-This setup is:
-
-* Correct
-* Scalable
-* Production-ready (with later tuning)
-* Reusable for future projects
-
 ---
+
+# ❤️ Author
+
+**Zana Hidayat Mohammed**  
+Suli Core — Modern Full-stack Development  
+
