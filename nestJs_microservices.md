@@ -203,6 +203,11 @@ docker compose up -d
 ```
 
 ---
+Fully run Docker Desktop :
+
+```bash
+docker compose up --build
+```
 
 ## 🔟 Key Rules to Remember
 
