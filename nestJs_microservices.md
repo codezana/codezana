@@ -1,5 +1,4 @@
 # 🚀 NestJS Microservices + Docker + NATS
----
 
 ## 🧠 Big Picture Architecture
 
