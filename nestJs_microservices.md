@@ -1,9 +1,4 @@
 # 🚀 NestJS Microservices + Docker + NATS
-
-> **Personal step-by-step notes** to remember the *correct* process for setting up a microservices backend using **NestJS + NATS + Docker**.
->
-> This is written to be saved in GitHub and reused for future projects.
-
 ---
 
 ## 🧠 Big Picture Architecture
@@ -169,6 +164,13 @@ docker compose up --build
 docker compose down
 ```
 
+## To show tables inside Docker : 
+
+```bash
+docker compose exec postgres psql -U postgres -d hello-microservices
+Then write 
+\dt
+```
 ---
 
 ## 9️⃣ Docker Error Fix (VERY IMPORTANT)
