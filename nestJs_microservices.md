@@ -170,6 +170,11 @@ docker compose exec postgres psql -U postgres -d hello-microservices
 Then write 
 \dt
 ```
+## Generate migration
+
+```bash
+docker compose exec users-service npm run migration:generate
+```
 ---
 
 ## 9️⃣ Docker Error Fix (VERY IMPORTANT)
