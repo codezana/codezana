@@ -72,6 +72,7 @@ php artisan shield:setup
 - SQLite (Offline Mode)
 - Spatie Laravel Permission
 - Filament Shield
+- super admin : php artisan shield:super-admin
 
 ---
 
