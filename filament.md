@@ -48,7 +48,7 @@ DB_DATABASE=database/database.sqlite
 ## 🔐 Install Spatie Roles & Permissions
 
 ```bash
-composer require spatie/laravel-permission
+composer require spatie/laravel-permission:^6.24 -W
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 php artisan migrate
 ```
@@ -58,8 +58,9 @@ php artisan migrate
 ## 🛡 Install Filament Shield (Role Management UI)
 
 ```bash
-composer require bezhansalleh/filament-shield
-php artisan shield:install
+composer require bezhansalleh/filament-shield:^4.1 -W
+php artisan shield:setup
+
 ```
 
 ---
