@@ -116,6 +116,13 @@ Start Tinker :
 php artisan tinker
 ```
 
+```bash
+$user = \App\Models\User::where('email', 'cashier1@gmail.com')->first();
+Role::firstOrCreate(['name' => 'cashier']);
+$user->assignRole('cashier');
+
+```
+
 Create Super Admin :
 
 ```bash
