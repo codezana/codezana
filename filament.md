@@ -3,10 +3,10 @@
 This document describes the complete setup process for a Laravel Admin Panel project using:
 
 - Laravel (Latest Stable)
-- Filament v3
+- Filament v5
 - SQLite (Local Development)
 - Spatie Laravel Permission
-- Filament Shield
+- Filament Shield v5
 
 This structure is suitable for internal systems, ERP platforms, dashboards, SaaS backends, and management tools.
 
@@ -159,6 +159,11 @@ php artisan optimize:clear
 ```
 ---
 
+### For realtion if had use 
+
+```bash
+php artisan make:filament-relation-manager CategoryResource products name
+```
 
 ## Production Recommendations
 
