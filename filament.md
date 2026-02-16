@@ -165,6 +165,12 @@ php artisan optimize:clear
 php artisan make:filament-relation-manager CategoryResource products name
 ```
 
+### For publish rsource Roles use :
+
+```bash
+ php artisan shield:publish
+```
+
 ## Production Recommendations
 
 - Use MySQL or PostgreSQL in production.
