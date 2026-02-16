@@ -6,7 +6,7 @@ This document describes the complete setup process for a Laravel Admin Panel pro
 - Filament v5
 - SQLite (Local Development)
 - Spatie Laravel Permission
-- Filament Shield v5
+- Filament Shield v4
 
 This structure is suitable for internal systems, ERP platforms, dashboards, SaaS backends, and management tools.
 
