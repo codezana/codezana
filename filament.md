@@ -165,6 +165,13 @@ php artisan optimize:clear
 php artisan make:filament-relation-manager CategoryResource products name
 ```
 
+### Custom dahsboard 
+
+```bash
+php artisan make:filament-page Dashboard
+php artisan make:filament-widget DashboardStats --stats-overview
+```
+
 ### For publish rsource Roles use :
 
 ```bash
