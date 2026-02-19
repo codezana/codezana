@@ -72,7 +72,7 @@ php artisan migrate
 Install Spatie Permission :
 
 ```bash
-composer require spatie/laravel-permission:^6.0 -W
+composer require spatie/laravel-permission
 ```
 
 Publish configuration and migrations :
