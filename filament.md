@@ -191,6 +191,12 @@ Then inside AdminPanelProvider:
 ->login(\App\Filament\Pages\Auth\Login::class)
 ```
 
+### Generate Filament Theme   for fix csss not renderd
+
+```bash
+php artisan filament:theme
+```
+
 ## Production Recommendations
 
 - Use MySQL or PostgreSQL in production.
