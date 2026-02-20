@@ -178,6 +178,19 @@ php artisan make:filament-widget DashboardStats --stats-overview
  php artisan shield:publish
 ```
 
+### LEVEL 3 — Fully Custom Login Page (Advanced)
+
+Create custom login page:
+
+```bash
+php artisan make:filament-page Auth/Login
+```
+Then inside AdminPanelProvider:
+
+```bash
+->login(\App\Filament\Pages\Auth\Login::class)
+```
+
 ## Production Recommendations
 
 - Use MySQL or PostgreSQL in production.
