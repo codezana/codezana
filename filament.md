@@ -197,6 +197,17 @@ Then inside AdminPanelProvider:
 php artisan filament:theme
 ```
 
+### Install "Laravel IDE Helper" (Highly Recommended)
+Most Laravel developers use the Laravel IDE Helper to solve exactly this problem.
+It generates a helper file that tells your IDE about all the "magic" methods in Laravel and Spatie.
+
+Run these commands:
+```bash
+composer require --dev barryvdh/laravel-ide-helper
+php artisan ide-helper:generate
+php artisan ide-helper:models -N
+```
+
 ## Production Recommendations
 
 - Use MySQL or PostgreSQL in production.
