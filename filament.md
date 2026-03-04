@@ -104,7 +104,7 @@ php artisan shield:install
 Generate permissions :
 
 ```bash
-php artisan shield:generate
+php artisan shield:generate --all
 ```
 ## Assigning Roles Manually (Using Tinker)
 
